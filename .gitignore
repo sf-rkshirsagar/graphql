@@ -1,0 +1,49 @@
+# eclipse
+.settings/
+.classpath
+.project
+
+# intellij
+.idea/
+!/.idea/codeStyles/
+!.idea/externalDependencies.xml
+*.iml
+.ijwb/
+
+# vscode
+.vscode/
+
+# gradle
+.gradle/
+
+# build artifacts
+out
+bin
+build
+lib
+coverage-report/
+
+# mac
+.DS_Store
+*.swp
+
+# this is where the CI cache goes
+/cache
+
+# generated node code
+node_modules
+
+# generated files
+*.swp
+*.iml
+*.ipr
+*.iws
+*.iml
+*.ipr
+*.iws
+
+# ignore generated test files
+argfile*
+twistcli
+
+bazel-*
