@@ -14,19 +14,15 @@ java_library(
     name = "example_gql",
     srcs = [
         "Main.java",
-        ":compiler",
     ],
     deps = [
-#        ":kt-lib"
+        ":kt-lib",
     ],
 )
 
 # Generated files are here: bazel-out/darwin-fastbuild/bin/src/main/java/com/example/apollo/com/example
 # However they can't be located.
-#kt_jvm_library(
-#    name = "kt-lib",
-#    srcs = glob(["**/*.kt", "*.kt"]),
-#    deps = [
-#        "@maven//:com_apollographql_apollo3_apollo_compiler",
-#    ],
-#)
+kt_jvm_library(
+    name = "kt-lib",
+    srcs = glob(["**/*.kt", "*.kt"]) + [":compiler"],
+)

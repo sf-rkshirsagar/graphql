@@ -7,6 +7,9 @@ public class Main {
         // bazel build //src/main/java/com/example:example_gql
 
 
+        // THIS IS WHERE IT ALL FAILS WHEN GENERATED CLASSES ARE USED ->
+        // UNCOMMENT THESE LINES:
+
         // new com.example.LaunchListQuery();
         // new LaunchListQuery();
         // new com.example.apollo.LaunchListQuery();
