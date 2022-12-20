@@ -11,7 +11,14 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
-        "com.apollographql.apollo3:apollo-compiler:3.6.2",
+        "com.apollographql.apollo3:apollo-compiler:3.7.2",
+        "com.apollographql.apollo3:apollo-ast:3.7.2",
+        "com.squareup.okio:okio-jvm:3.2.0",
+        "org.antlr:antlr4-runtime:4.9.3",
+        "com.apollographql.apollo3:apollo-api:3.7.2",
+        "com.apollographql.apollo3:apollo-api-jvm:3.7.2",
+        "com.squareup:kotlinpoet:1.12.0",
+        "org.jetbrains.kotlin:kotlin-stdlib:1.7.22",
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
